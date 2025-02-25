@@ -25,13 +25,15 @@ function generateReleasePhrase() {
   return releasedPhrases[i];
 }
 function releasePhraseLog(name, pokemon) {
+  console.log(pokemon);
   const colour = typeColourSelector(pokemon);
   console.log(`\n\t${name} ${generateReleasePhrase()} ${colour(pokemon)}!`);
 }
 
 function typeColourSelector(object) {
   let type;
-  if (typeof object === 'string') {
+  if (!object) type = 'normal';
+  else if (typeof object === 'string') {
     const pokemon = pokemonLookup(object);
     type = pokemon.type;
   } else type = object.type;
