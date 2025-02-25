@@ -162,6 +162,7 @@ function round() {
     choices: ['FIGHT', 'POKéMON', 'RUN'],
   };
 
+  const trainerBelt = trainer.belt.map((pokeball) => pokeball.pokemon.name);
   const roundSelectPokemonQuestion = [
     {
       type: 'list',
@@ -171,8 +172,6 @@ function round() {
       loop: false,
     },
   ];
-
-  const trainerBelt = trainer.belt.map((pokeball) => pokeball.pokemon.name);
 
   if (Object.keys(battle.trainer1SelectedPokemon).length === 0) {
     inquirer.prompt(roundSelectPokemonQuestion).then((pokemon) => {
@@ -249,7 +248,9 @@ function round() {
 
           if (computer.belt.length === 0) {
             borderLog(trainer);
-            console.log(`\n\t${yellow(trainer.name)} wins!\n\t`);
+            console.log(
+              `\n\t🔥 🔥 🔥 ${yellow(trainer.name)} wins! 🔥 🔥 🔥 \n\t`
+            );
             borderLog(trainer);
             return;
           }

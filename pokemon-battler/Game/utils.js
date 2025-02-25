@@ -31,9 +31,10 @@ function releasePhraseLog(name, pokemon) {
 
 function typeColourSelector(object) {
   let type;
-
-  if (typeof object === 'string') type = pokemonLookup(object).type;
-  else type = object.type;
+  if (typeof object === 'string') {
+    const pokemon = pokemonLookup(object);
+    type = pokemon.type;
+  } else type = object.type;
 
   let colour;
   switch (type) {
