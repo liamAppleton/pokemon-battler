@@ -2,9 +2,9 @@
   "devDependencies": {
     "jest": "^29.7.0"
   },
-  "name": "fun-pokemon-battler",
+  "name": "pokemon-battler",
   "version": "1.0.1",
-  "description": "For this sprint, head to Northcoder's L2C app:",
+  "description": "Have you got what it takes to win?",
   "main": "index.js",
   "dependencies": {
     "@inquirer/prompts": "^7.3.1",
@@ -203,14 +203,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/heliosasdesigner/fun-pokemon-battler.git"
+    "url": "git+https://github.com/liamAppleton/pokemon-battler"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/heliosasdesigner/fun-pokemon-battler/issues"
+    "url": "https://github.com/liamAppleton/pokemon-battler/issues"
   },
-  "homepage": "https://github.com/heliosasdesigner/fun-pokemon-battler#readme"
+  "homepage": "https://github.com/liamAppleton/pokemon-battler#readme"
 }
