@@ -8,12 +8,12 @@ const {
 const Trainer = require('../PokemonClasses/trainer');
 
 // Grass-type Trainer - Aroma Lady Violet
-const roserade = new GrassPokemon('Roserade', 60, 24, 'Poison Point');
-const lilligant = new GrassPokemon('Lilligant', 70, 22, 'Chlorophyll');
-const aromatisse = new GrassPokemon('Aromatisse', 90, 26, 'Absorb');
-const cherrim = new GrassPokemon('Cherrim', 58, 20, 'Flower Gift');
-const florges = new GrassPokemon('Florges', 85, 28, 'Symbiosis');
-const bellossom = new GrassPokemon('Bellossom', 75, 25, 'Leaf Guard');
+const venusaur = new GrassPokemon('Venusaur', 80, 29, 'Overgrow');
+const torterra = new GrassPokemon('Torterra', 95, 27, 'Shell Armor');
+const serperior = new GrassPokemon('Serperior', 75, 26, 'Contrary');
+const shiftry = new GrassPokemon('Shiftry', 70, 24, 'Chlorophyll');
+const decidueye = new GrassPokemon('Decidueye', 78, 28, 'Overgrow');
+const tangrowth = new GrassPokemon('Tangrowth', 100, 30, 'Regenerator');
 
 const pb1Grass = new Pokeball();
 const pb2Grass = new Pokeball();
@@ -22,12 +22,12 @@ const pb4Grass = new Pokeball();
 const pb5Grass = new Pokeball();
 const pb6Grass = new Pokeball();
 
-pb1Grass.throw(roserade);
-pb2Grass.throw(lilligant);
-pb3Grass.throw(aromatisse);
-pb4Grass.throw(cherrim);
-pb5Grass.throw(florges);
-pb6Grass.throw(bellossom);
+pb1Grass.throw(venusaur);
+pb2Grass.throw(torterra);
+pb3Grass.throw(serperior);
+pb4Grass.throw(shiftry);
+pb5Grass.throw(decidueye);
+pb6Grass.throw(tangrowth);
 
 const aromaLadyViolet = new Trainer(
   'Aroma Lady Violet',
@@ -144,7 +144,6 @@ const tidalQueenMarina = new Trainer(
 tidalQueenMarina.type = 'water';
 
 // Balanced Trainer - Veteran Marcus
-const venusaur = new GrassPokemon('Venusaur', 80, 25, 'Overgrow');
 
 const pbMixed1 = new Pokeball();
 const pbMixed2 = new Pokeball();
@@ -158,7 +157,7 @@ pbMixed2.throw(gyarados);
 pbMixed3.throw(venusaur);
 pbMixed4.throw(snorlax);
 pbMixed5.throw(pidgeot);
-pbMixed6.throw(roserade);
+pbMixed6.throw(tangrowth);
 
 const veteranMarcus = new Trainer(
   'Veteran Marcus',
@@ -183,7 +182,7 @@ const pbMixed12 = new Pokeball();
 pbMixed7.throw(arcanine);
 pbMixed8.throw(vaporeon);
 pbMixed9.throw(ursaring);
-pbMixed10.throw(roserade);
+pbMixed10.throw(venusaur);
 pbMixed11.throw(flareon);
 pbMixed12.throw(feraligatr);
 

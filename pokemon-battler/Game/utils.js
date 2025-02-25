@@ -25,17 +25,16 @@ function generateReleasePhrase() {
   return releasedPhrases[i];
 }
 function releasePhraseLog(name, pokemon) {
-  console.log(pokemon);
   const colour = typeColourSelector(pokemon);
   console.log(`\n\t${name} ${generateReleasePhrase()} ${colour(pokemon)}!`);
 }
 
 function typeColourSelector(object) {
   let type;
-  if (!object) type = 'normal';
-  else if (typeof object === 'string') {
+  console.log(object);
+  if (typeof object === 'string') {
     const pokemon = pokemonLookup(object);
-    type = pokemon.type;
+    type = pokemon.type !== undefined ? pokemon.type : 'normal';
   } else type = object.type;
 
   let colour;
@@ -134,7 +133,7 @@ function healthBar(pokemon) {
     );
     return;
   }
-  if (remainingPercentage * 5 <= 25 && remainingPercentage * 5 >= 1) {
+  if (remainingPercentage * 5 <= 25 && remainingPercentage * 5 >= 0.25) {
     colour = chalk.hex('#FF0000');
     console.log(
       `\n\t${colour(hb.join(''))}  ${colour(pokemon.hitPoints)} / ${chalk.blue(
