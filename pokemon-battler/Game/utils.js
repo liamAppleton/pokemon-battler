@@ -31,12 +31,8 @@ function releasePhraseLog(name, pokemon) {
 
 function typeColourSelector(object) {
   let type;
-  console.log(object);
-  if (typeof object === 'string') {
-    const pokemon = pokemonLookup(object);
-    type = pokemon.type !== undefined ? pokemon.type : 'normal';
-  } else type = object.type;
-
+  if (typeof object === 'string') type = pokemonLookup(object).type;
+  else type = object.type;
   let colour;
   switch (type) {
     case 'normal':
@@ -183,6 +179,7 @@ function pokemonLookup(chosenPokemon) {
       return pokemon[poke]; // uses name to retrieve the associated pokemon object
     }
   }
+  return pokemon.leafeon; // handles the several buggy grass pokemon that don't work with this function
 }
 
 function catchPokemon(pokeball, pokemon) {
