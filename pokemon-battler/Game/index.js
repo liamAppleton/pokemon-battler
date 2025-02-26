@@ -79,8 +79,8 @@ function computerTurn() {
       borderLog(computer);
       return;
     } // computer win condition
-    setTimeout(() => round(), 400); // back to round
-  }, 400);
+    setTimeout(() => round(), 700); // back to round
+  }, 700);
 }
 
 function pokemonSelection() {
@@ -255,8 +255,8 @@ function round() {
             return;
           }
 
-          setTimeout(() => computerTurn(), 400);
-        }, 400);
+          setTimeout(() => computerTurn(), 700);
+        }, 700);
       }
     });
   }
