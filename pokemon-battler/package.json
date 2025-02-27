@@ -3,7 +3,7 @@
     "jest": "^29.7.0"
   },
   "name": "pokemon-battler",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Have you got what it takes to win?",
   "main": "index.js",
   "dependencies": {
