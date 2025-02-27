@@ -58,7 +58,7 @@ function attackLog(attacker, defender, damageTaken) {
   console.log(
     `\n\t${borderColour(
       '≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈'
-    )}\n\n\t${attColour(attacker.name)} use ${attacker.move} on ${defColour(
+    )}\n\n\t${attColour(attacker.name)} used ${attacker.move} on ${defColour(
       defender.name
     )} for ${damageTaken} points!\n\t`
   );
